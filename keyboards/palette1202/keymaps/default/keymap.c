@@ -73,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     KC_LSFT,    KC_LCTRL,     LCTL(KC_Z),    KC_SPC
     ),
     [WIN_CS_2] = LAYOUT(
-      MO(SETTING),  KC_ESC,     KC_G,         KC_R,          LCTL(KC_GRV),
+      MO(SETTING),  KC_ESC,     KC_G,         KC_R,          LCTL(KC_EQL),
       _______,      LCTL(KC_D), KC_K,         KC_F,          LCTL(KC_S),
                     KC_LALT,    KC_I,         C(S(KC_Z)),    KC_H
     ),
@@ -138,11 +138,11 @@ void encoder_update_user(uint8_t index, bool clockwise) {
         if (currentLayer % 2 == 0) {
           // default layer
           // Zoom
-          tap_code16(!clockwise ? C(KC_MINS) : C(KC_EQL));
+          tap_code16(!clockwise ? C(KC_MINS) : C(KC_SCLN));
         } else {
           // Fn Layer
           // rotate canvas
-          tap_code(!clockwise ? KC_MINS : KC_QUOT);
+          tap_code(!clockwise ? KC_MINS : KC_EQL);
         }
         break;
       case WIN_PS_1:
@@ -198,11 +198,11 @@ void encoder_update_user(uint8_t index, bool clockwise) {
         if (currentLayer % 2 == 0) {
           // default layer
           // rotate canvas
-          tap_code(!clockwise ? KC_LBRC : KC_RBRC);
+          tap_code(!clockwise ? KC_LBRC : KC_BSLS);
         } else {
           // Fn Layer
           // opacity of brush
-          tap_code16(!clockwise ? C(KC_LBRC) : C(KC_RBRC));
+          tap_code16(!clockwise ? C(KC_LBRC) : C(KC_BSLS));
         }
         break;
       case WIN_PS_1:
