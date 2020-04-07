@@ -118,7 +118,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       XXXX, XXXX, XXXX, XXXX, LSMI, XXXX,             EQL,  LSEQ, XXXX, XXXX, XXXX, LSEQ, \
       ____, XXXX, XXXX, XXXX, LSLB, LBRC,             LEFT, LEFT, UP,   RGHT,  EQL, PLUS, \
       ____, XXXX, XXXX, XXXX, XXXX, ____, MINS, XXXX, LEFT, LEFT, DOWN, RGHT, ____, ____, \
-      ____, ____, XXXX, ____, ____, XXXX,  ADJ,  ADJ, XXXX, ____, ____, DEL,  ____, ____ \
+      ____, ____, XXXX, ____, ____, XXXX,  ADJ,  ADJ, XXXX, ____, DEL,  ____, ____, ____ \
       ),
 
   /*  Keypad function layer
